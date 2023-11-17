@@ -246,8 +246,8 @@ while not finished:
     if keys[119]: gun.drive('up') # W
     elif keys[115]: gun.drive('down') # S
 
-    if keys[1073741906]: gun2.drive('up') # R
-    elif keys[1073741905]: gun2.drive('down') # v
+    if keys[114]: gun2.drive('up') # R
+    elif keys[118]: gun2.drive('down') # v
 
     clock.tick(FPS)
     for event in pygame.event.get():
