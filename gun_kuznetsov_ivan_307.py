@@ -243,11 +243,11 @@ while not finished:
     keys = pygame.key.get_pressed()
     if not False in keys: print(keys)
     
-    if keys[119]: gun.drive('up') # W
-    elif keys[115]: gun.drive('down') # S
+       if pygame.key.get_pressed()[pygame.K_w]: gun.drive('up') # W
+    elif pygame.key.get_pressed()[pygame.K_s]: gun.drive('down') # S
 
-    if keys[114]: gun2.drive('up') # R
-    elif keys[118]: gun2.drive('down') # v
+    if pygame.key.get_pressed()[pygame.K_UP]: gun2.drive('up') # arrow up
+    elif pygame.key.get_pressed()[pygame.K_DOWN]: gun2.drive('down') # arrow down
 
     clock.tick(FPS)
     for event in pygame.event.get():
